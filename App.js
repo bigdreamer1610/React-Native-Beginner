@@ -17,8 +17,8 @@ const HomeStack = createStackNavigator();
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
+      <HomeStack.Screen name="Wallet" component={Wallet} options={{ headerShown: false }} />
       <HomeStack.Screen name="Home" component={Home} />
-      <HomeStack.Screen name="Wallet" component={Wallet} />
     </HomeStack.Navigator>
   );
 }
