@@ -22,17 +22,16 @@ const TouchableView = ({ title, action }) => {
         </TouchableOpacity>
     )
 }
-const Profile = (props) => {
-    const { keyword } = props.route.params
+const Profile = (propss) => {
     return (
         <View style={styles.wrapper}>
-            <ViewWithText title={keyword}></ViewWithText>
+            <ViewWithText></ViewWithText>
             <ViewWithText title='Back to previous Screen'></ViewWithText>
-            <TouchableView title={keyword} action={props.navigation.goBack} ></TouchableView>
+            <TouchableView></TouchableView>
             <View style={styles.row}>
                 <Text>Do you really want to log out?</Text>
                 <TouchableOpacity onPress={() =>
-                    props.navigation.navigate('My List')}>
+                    props.navigation.navigate('MyList')}>
                     <Text style={styles.innerText}>Click here</Text>
                 </TouchableOpacity>
             </View>

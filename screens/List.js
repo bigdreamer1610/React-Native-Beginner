@@ -91,7 +91,7 @@ const MyList = () => {
         []
     );
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <TouchableOpacity>
                 <View>
                     <Text>Click me</Text>
@@ -109,7 +109,7 @@ const MyList = () => {
                     <RefreshControl refreshing={refreshing} onRefresh={onRefresh} title='Loading' />
                 }
             />
-        </View>
+        </SafeAreaView>
     );
 };
 

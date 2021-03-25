@@ -3,13 +3,13 @@ import { StatusBar } from 'expo-status-bar';
 import React, { Component, useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Image, TextInput, Button, SafeAreaView, TouchableHighlight, ScrollView, Switch, FlatList, TouchableOpacity } from 'react-native';
 
-const Home = (props) => {
+const Wallet = (props) => {
     return (
         <View style={styles.wrapper}>
             <TouchableOpacity style={styles.clickableView} onPress={() =>
-                props.navigation.navigate('Wallet', { keyword: 'Johny' })}>
+                props.navigation.navigate('Profile', { keyword: 'Johny' })}>
                 <View style={styles.centerView}>
-                    <Text style={styles.innerText}>Go to the next screen</Text>
+                    <Text style={styles.innerText}>Go to the next screen Wallet</Text>
                 </View>
             </TouchableOpacity>
         </View>
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Home;
+export default Wallet;
